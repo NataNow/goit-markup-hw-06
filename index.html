@@ -341,6 +341,64 @@
       <div class="backdrop is-hidden" data-modal>
         <!--<button data-open-model>відкрити модалку</button>-->
         <div class="model">
+          <form>
+            <h2 class="form-text">Залиште свої дані, ми вам передзвонимо</h2>
+            <div class="form-field">
+              <label class="form-label" for="name">Ім'я</label>
+              <input
+                class="form-input"
+                type="text"
+                name="user-name"
+                id="name"
+                placeholder="Стефанія Макаровна"
+              />
+              <svg class="form-icon">
+                <use href="./img/icons.svg#icon-name"></use>
+              </svg>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="tel">Телефон</label>
+              <input
+                class="form-input"
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="+380961234567"
+              />
+              <svg class="form-icon">
+                <use href="./img/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="mail">Пошта</label>
+              <input
+                class="form-input"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="user2022@gmail.com"
+              />
+              <svg class="form-icon">
+                <use href="./img/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
+
+            <div class="form-field">
+              <label for="coment">Коментар</label>
+              <textarea class="textarea" name="coment" id="coment" cols="10" rows="10"></textarea>
+            </div>
+
+            <div class="form-condition">
+              <input type="checkbox" name="" value="text" id="text" />
+              <label for="text"
+                >Погоджуюся з розсилкою та приймаю
+                <span class="form-span">Умови договору</span></label
+              >
+            </div>
+            <button class="btn-submit" type="submit">Відправити</button>
+          </form>
           <button class="model-btn" data-modal-close>
             <svg class="model-icon" width="30" height="30">
               <use href="./img/icons.svg#icon-close"></use>
@@ -410,8 +468,24 @@
             </li>
           </ul>
         </div>
+        <form class="footer-data">
+          <div class="footer-item">
+            <h3 class="footer-form">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
+            <label class="footer-label" for="mail">E-mail</label>
+            <input class="footer-input" type="email" name="mail" id="mail" />
+          </div>
+          <div class="footer-btn">
+            <button class="footer-submit" type="submit">
+              Підписатися
+              <svg class="footer-icon">
+                <use href="./img/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+
     <script src="./modal.js"></script>
   </body>
 </html>
