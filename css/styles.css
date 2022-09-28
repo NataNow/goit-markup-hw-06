@@ -641,6 +641,17 @@ html {
   color: var(--bg-portf-color);
 }
 
+.checkbox-custom {
+  width: 16px;
+  height: 15px;
+  font: var(--primary-text-color);
+}
+
+.checkbox-custom:focus-within {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-text-color);
+}
+
 .footer-submit {
   font-weight: 700;
   font-size: 16px;
