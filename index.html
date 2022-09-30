@@ -341,7 +341,7 @@
       <div class="backdrop is-hidden" data-modal>
         <!--<button data-open-model>відкрити модалку</button>-->
         <div class="model">
-          <form>
+          <form class="form-model">
             <h2 class="form-text">Залиште свої дані, ми вам передзвонимо</h2>
             <div class="form-field">
               <label class="form-label" for="name">Ім'я</label>
@@ -371,7 +371,6 @@
               <label for="coment">Коментар</label>
               <textarea
                 class="textarea"
-                name="coment"
                 id="coment"
                 cols="10"
                 rows="10"
@@ -460,8 +459,8 @@
         <form class="footer-data">
           <h3 class="footer-form">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
           <div class="footer-item">
-            <input class="footer-input" type="email" name="mail" id="mail" />
-            <label class="footer-label" for="mail">E-mail</label>
+            <input class="footer-input" type="email" name="mail" id="mail" placeholder="E-mail" />
+            <label class="footer-label" for="mail"></label>
 
             <button class="footer-submit" type="submit">
               Підписатися
