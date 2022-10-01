@@ -722,6 +722,9 @@ html {
   pointer-events: none;
   visibility: hidden;
 }
+.form-model {
+  padding: 40px;
+}
 
 .model {
   position: absolute;
@@ -747,11 +750,13 @@ html {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.model-btn:focus,
-.model-icon:hover {
+.model-icon:hover,
+.model-icon:focus,
+.model-icon:focus-within {
   color: var(--accent-text-color);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .model-icon {
   display: inline-flex;
   align-items: center;
@@ -761,11 +766,6 @@ html {
   margin: auto;
 }
 
-.model-icon:focus,
-.model-icon:hover {
-  color: var(--accent-text-color);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .button {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -788,6 +788,7 @@ html {
   outline: none;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form {
   display: flex;
   justify-content: center;
@@ -871,6 +872,7 @@ html {
   justify-content: center;
   text-align: center;
   line-height: calc(24 / 14);
+  margin-top: 20px;
 }
 .btn-submit {
   display: flex;
@@ -885,7 +887,7 @@ html {
   border-radius: 4px;
   border: none;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .btn-submit:hover,
